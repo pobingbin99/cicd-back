@@ -7,6 +7,5 @@ import org.springframework.boot.test.context.SpringBootTest;
 class Cicd02BootApplicationTests {
     @Test
     void contextLoads() {
-        throw new RuntimeException("Fail!");
     }
 }
