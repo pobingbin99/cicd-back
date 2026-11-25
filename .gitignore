@@ -38,3 +38,6 @@ out/
 
 ## application.properties, application.yaml ###
 application.*
+
+## docker compose file ###
+docker-compose.yml

@@ -12,7 +12,7 @@ import java.time.format.DateTimeFormatter;
 public class MainController {
 
     // 배포할 때마다 숫자를 올려서 바뀌었는지 확인
-    private static final String VERSION = "v2";
+    private static final String VERSION = "v3";
 
     private static final String STARTED_AT =
             LocalDateTime.now(ZoneId.of("Asia/Seoul"))
