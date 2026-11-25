@@ -1,0 +1,1 @@
+Github에 resources 폴더가 push 되도록 임의의 파일 하나 만들어주기
