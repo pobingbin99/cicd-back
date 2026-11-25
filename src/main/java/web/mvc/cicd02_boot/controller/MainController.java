@@ -5,17 +5,18 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 
 @RestController
 public class MainController {
 
     // 배포할 때마다 숫자를 올려서 바뀌었는지 확인
-    private static final String VERSION = "v1";
+    private static final String VERSION = "v2";
 
-    // 서버가 켜진 시간 (새로 배포되면 바뀜)
     private static final String STARTED_AT =
-            LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+            LocalDateTime.now(ZoneId.of("Asia/Seoul"))
+                    .format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
 
     @GetMapping(value = "/", produces = MediaType.TEXT_HTML_VALUE)
     public String index() {
