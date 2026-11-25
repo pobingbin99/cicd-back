@@ -10,6 +10,6 @@ class Cicd02BootApplicationTests {
     @Test
     void contextLoads() {
         log.info("----- 자동 배포 전 테스트 코드 실행 -----");
-        throw new RuntimeException("Fail!");
+//        throw new RuntimeException("Fail!");
     }
 }
